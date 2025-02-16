@@ -1,15 +1,42 @@
-@media screen and (width <= 560px) {
+@media screen and (width <= 675px) {
 
-body {
+
+
+.chamativa {
+  display: none ;
+}
+
+.logotelamenor {
+  display: block;
+
 
 }
 
-    main {
-      background-color: yellow;
-    }
+.logoheader {
+  padding: 10px;
+  height: 150px;
+}
 
-      main img {
-        
-      }
+header li {
+  display: none;
+}
+
+article {
+  display: none;
+}
+
+.containerLanche {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  background-color: #000; 
+}
+
+section h1 {
+  top: 185px;
+}
+
+.containerLanche {
+  margin-top: 180px;
+}
 
 }
