@@ -10,6 +10,6 @@ btnPedir.forEach((btn) => {
 function enviarPedido(pedido) {
   // Código para enviar a mensagem para a lanchonete
   console.log(`Pedido enviado: ${pedido}`);
-  // Exemplo de código para enviar uma mensagem via WhatsApp
+  //  código para enviar uma mensagem via WhatsApp
    window.open(`https://wa.me/5516997521019?text=Pedido: ${pedido}`);
 }
