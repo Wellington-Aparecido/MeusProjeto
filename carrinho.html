@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/carrinho.css">
+    <title>HamburgueriaHery</title>
+</head>
+<body>
+
+<header>
+    <nav>
+        <ul>
+            <img src="imagens/logo.jpeg" alt="" class="logoheader">
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Cardápio</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+</header> 
+
+<main>
+    <section>
+        <h1>Cardápio</h1>
+        <div class="containerLanche">
+            <div class="lanche">
+                <img src="imagens/lancheCardapio1.jpeg" alt="">   
+                <div class="descricao">
+                    <h2 class="titulo-lanche">X-Tudo</h2>
+                    <p>Carne de boi, queijo, alface, tomate e molho especial</p>
+                </div>
+                <h4>R$ 23,90</h4>
+                <button class="btn-pedir" data-nome="X-Tudo" data-preco="23.90">Pedir</button>
+            </div>  
+            <div class="lanche">
+                <img src="imagens/lancheCardapio2.jpeg" alt="">   
+                <div class="descricao">
+                    <h2 class="titulo-lanche">X-Bacon</h2>
+                    <p>Carne, bacon, queijo e molho especial</p>
+                </div>
+                <h4>R$ 25,90</h4>
+                <button class="btn-pedir" data-nome="X-Bacon" data-preco="25.90">Pedir</button>
+            </div> 
+        </div>
+    </section>
+
+    <!-- Carrinho -->
+    <section class="carrinho">
+        <h2>Seu Carrinho</h2>
+        <ul id="listaCarrinho"></ul>
+        <p><strong>Total: R$ <span id="total">0.00</span></strong></p>
+        <button id="btnEnviarPedido">Enviar Pedido</button>
+    </section>
+</main>
+
+<script src="carrinho.js"></script>
+</body>
+</html>

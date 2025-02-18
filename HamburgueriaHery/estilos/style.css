@@ -140,3 +140,32 @@ section button {
     margin-left: 10px;
     cursor: pointer;
 }
+
+.carrinho {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid #333;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+.carrinho ul {
+    list-style: none;
+    padding: 0;
+}
+
+.carrinho li {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+}
+
+.btn-remover {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
