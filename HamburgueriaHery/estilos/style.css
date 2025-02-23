@@ -12,13 +12,12 @@ body, html {
 }
 
 header {
-    position: fixed;
     width: 100%;
    
 }
 
 header nav {
-    background-color: #212121;
+    background-color: #000;
     width: 100%;
     padding: 15px;
 }
@@ -94,6 +93,7 @@ section h1 {
     text-align: center;
     padding: 20px;
     background-color: maroon;
+    margin-top: 40px;
     margin-bottom: 10px;
     border-radius: 10px;
     box-shadow: 2px 2px 8px #fff ;
@@ -138,29 +138,34 @@ section button {
     cursor: pointer;
 }
 
-.carrinho {
+ .carrinho {
     max-width: 500px;
-    margin: 20px auto;
+    margin: 50px auto;
     padding: 20px;
     border: 2px solid #333;
     background-color: #f8f8f8;
     text-align: center;
     box-shadow: 0px 0px 10px #fff;
+    border-radius: 10px;
 }
 
-.carrinho ul {
+.carrinho a {
+    text-decoration: none;
+    color: #fff;
+}
+ .carrinho ul {
     list-style: none;
     padding: 0;
 }
 
-.carrinho li {
+ .carrinho li {
     display: flex;
     justify-content: space-between;
     padding: 5px;
     border-bottom: 1px solid #ddd;
 }
 
-.btn-remover {
+ .btn-remover {
     background-color: red;
     color: white;
     border: none;
@@ -168,49 +173,47 @@ section button {
     cursor: pointer;
 }
 
-footer {
+aside {
     height: 500px;
     background-color: #000;
     
 }
 
-footer h1 {
+aside h1 {
     color: #fff;
     text-align: center;
 }
 
-footer .container {
-    height: 350px;
-    
+aside .container {
     display: flex;
-    justify-content: space-evenly;
-    margin: 10px;
+    overflow: hidden;
+    max-width: 100%;
 }
 
-footer .item {
-    border-radius: 15px;
-    padding: 10px;
-    box-shadow: 0px 0px 10px #fff;
-    width: 200px;
-    height: 250px;
-    margin-top: 50px;
+aside .item {
+    flex: 1;
 }
 
-footer .item img {
+aside .item img {
     width: 100%;
-    height: 100%;
-    transition: all 0.5s ease-in-out;
+    display: block;
 }
 
-footer .item img:hover {
-    cursor: pointer;
+
+aside h1 {
+    text-shadow: 0px 0px 6px #fff;
 }
 
-footer .item img:active {
-    width: 500px;
-    height: 650px;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+footer {
+    height: 50px;
+    background-color: #fff;
+    text-align: center;
+    padding-top: 15px;
+    box-shadow: 0px 0px 10px #fff;
+}
+
+footer p a {
+    text-decoration: none;
+    font-weight: bold;
+    
 }
