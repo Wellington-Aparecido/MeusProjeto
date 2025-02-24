@@ -36,14 +36,14 @@ section h1 {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   background-color: #000; 
+  margin-top: 180px;
 }
+
+
+
 
 section h1 {
   top: 185px;
-}
-
-.containerLanche {
-  margin-top: 180px;
 }
 
 .container {
@@ -56,7 +56,12 @@ section h1 {
 }
 
 .item.active {
-  display: block;
+  display: block;[
+
+
+
+
+  ]
 }
 
 /* Estiliza os botões */

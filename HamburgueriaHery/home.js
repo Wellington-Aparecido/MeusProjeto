@@ -63,29 +63,3 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-document.addEventListener("DOMContentLoaded", function () {
-    let index = 0;
-    const items = document.querySelectorAll(".item");
-    const total = items.length;
-    const prevBtn = document.getElementById("prev");
-    const nextBtn = document.getElementById("next");
-
-    function showItem(i) {
-        items.forEach(item => item.classList.remove("active"));
-        items[i].classList.add("active");
-    }
-
-    prevBtn.addEventListener("click", function () {
-        index = (index - 1 + total) % total; // Volta para a imagem anterior
-        showItem(index);
-    });
-
-    nextBtn.addEventListener("click", function () {
-        index = (index + 1) % total; // Avança para a próxima imagem
-        showItem(index);
-    });
-
-    if (window.innerWidth <= 675) {
-        showItem(index); // Exibe o primeiro item ao carregar a página
-    }
-});
